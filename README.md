@@ -18,8 +18,9 @@ But first, let's see some deep understanding of both concepts:
 6. **Evaluation**: Assessing cluster quality and association rules using metrics like Silhouette score, Dunn Index, and lift.
 
 ### Results
-- **Customer Segmentation**: Identified distinct customer segments based on purchasing behavior using K-means++, Agglomerative, and DBSCAN clustering methods.
-- **Association Rule Mining**: Discovered frequent item sets and association rules using Apriori and FP-Growth algorithms, revealing common purchasing patterns.
+- **Customer Segmentation**: Identified distinct customer segments based on purchasing behavior using K-means++, Agglomerative, and DBSCAN clustering methods. Low-engagement customers with low frequency and recency make up one of the clusters, which logically leads to lower spending levels. To try and entice these customers to keep returning and shopping on the platform, promotions and discounts are the perfect fit for them. The other cluster stands for devoted, high-spending clients who make more frequent purchases and are more recent in their purchases; these clients are worthy of loyalty benefits and retention initiatives.
+  
+- **Association Rule Mining**: Discovered frequent item sets and association rules using Apriori and FP-Growth algorithms, revealing common purchasing patterns. Based on the rules obtained from the algorithms, we can understand the frequent items that the customers generally purchase. The antecedents of the rules give us a good estimate as to what consequent items will have a high chance of being purchased along with it. Hence such rules can be useful recommendations for those products bought together which is equivalent to placing these products together in a physical store.
 
 ### Conclusion
 The integrated approach of customer segmentation and market basket analysis informs targeted marketing strategies and enhances customer satisfaction. Future extensions may involve exploring additional algorithms for sequential pattern mining and integrating demographic data for more refined customer analysis.
